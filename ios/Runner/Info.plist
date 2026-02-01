@@ -41,6 +41,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSMotionUsageDescription</key>
+	<string>Cogniaware uses motion sensors to analyze your walking pattern for cognitive health insights. All data stays on your device.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Cogniaware uses speech recognition for voice exercises. Audio is processed on-device and discarded; only metrics are stored.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Cogniaware needs the microphone for voice exercises. Audio is processed locally and never stored or sent.</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>

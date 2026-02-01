@@ -1,6 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Required for accelerometer and gyroscope (gait analysis) -->
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <!-- For local notifications (trend alerts, preventive tips, reminders) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="true" />
     <application
-        android:label="cognify"
+        android:label="Cogniaware"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

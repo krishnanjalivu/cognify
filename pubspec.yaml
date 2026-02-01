@@ -1,5 +1,5 @@
 name: cognify
-description: "A new Flutter project."
+description: "Cogniaware - Passive cognitive health monitoring via gait analysis."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -30,10 +30,27 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+
+  # Sensors for accelerometer and gyroscope (gait detection)
+  sensors_plus: ^6.0.2
+  # Charts and trend visualization
+  fl_chart: ^0.69.0
+  # Local storage for trends and history
+  sqflite: ^2.3.2
+  path_provider: ^2.1.2
+  path: ^1.9.0
+  # Report export
+  pdf: ^3.10.7
+  # Local notifications: trend alerts, preventive tips, active task reminders
+  flutter_local_notifications: ^17.2.3
+  # Persist user preferences (data source, reminder time)
+  shared_preferences: ^2.2.2
+  # Voice (active) - on-device; audio discarded after processing
+  speech_to_text: ^6.6.0
+  # TensorFlow Lite placeholder - uncomment when adding ML model:
+  # tflite_flutter: ^0.10.4
+  # permission_handler: ^11.0.0
 
 dev_dependencies:
   flutter_test:
